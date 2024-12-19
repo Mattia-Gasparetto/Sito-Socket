@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Socket</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Le Socket</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">Introduzione</a></li>
+          <li><a href="">Collegamenti</a></li>
+          <li><a href="">Glossario</a></li>
+          <li><a href="">Blog</a></li>  
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Modello ISO-OSI</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Modello ISO-OSI</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <div class="container py-5">
+
+        <section id="introduzione-iso-osi" class="intro-section">
+            <div class="container">
+              <h2 class="section-title">Benvenuti nel mondo del Modello ISO-OSI!</h2>
+              <p class="intro-text">
+                Il Modello ISO-OSI è la base teorica fondamentale per comprendere come le reti di comunicazione permettono il trasferimento di dati tra dispositivi. 
+                Suddiviso in sette livelli distinti, ciascuno con un ruolo ben definito, questo modello standard facilita l'interoperabilità e rende possibile la connessione tra tecnologie diverse. 
+                Grazie alla sua struttura logica, il modello non solo semplifica la progettazione di sistemi di rete ma funge anche da guida per risolvere problemi e migliorare le prestazioni. 
+                Scopriamo insieme ogni livello e il suo ruolo cruciale nel far funzionare il mondo digitale che ci circonda!
+              </p>
+            </div>
+          </section>
+          
+  
+      <div class="row">
+          <div class="col-md-12">
+              <!-- Accordion for each layer -->
+              <div class="accordion" id="osiAccordion">
+  
+                  <!-- Layer 1 - Physical -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              <i class="fas fa-radiation icon"></i> Livello Fisico (Physical Layer)
+                          </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#osiAccordion">
+                          <div class="accordion-body">
+                              Il Livello Fisico si occupa della trasmissione fisica dei dati attraverso il mezzo. Gestisce la codifica e la modulazione dei segnali.
+                              <ul>
+                                  <li><strong>Funzione:</strong>&nbsp; Trasmissione di bit grezzi.</li>
+                                  <li><strong>Protocolli:</strong>&nbsp; Ethernet, Wi-Fi, Fibre Channel.</li>
+                              </ul>
+                              <button a href = "https://it.wikipedia.org/wiki/Modello_OSI" target = "_blank" class="btn btn-info"><i class="fas fa-info-circle"></i> Scopri di più</button>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- Layer 2 - Data Link -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <i class="fas fa-plug icon"></i> Livello Collegamento Dati (Data Link Layer)
+                          </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#osiAccordion">
+                          <div class="accordion-body">
+                              Il Livello Collegamento Dati gestisce l'accesso al mezzo fisico, fornendo la correzione degli errori a livello di frame.
+                              <ul>
+                                  <li><strong>Funzione:</strong>&nbsp; Creazione e gestione di frame.</li>
+                                  <li><strong>Protocolli:</strong>&nbsp; Ethernet, PPP, Frame Relay.</li>
+                              </ul>
+                              <button a href = "https://it.wikipedia.org/wiki/Modello_OSI" target = "_blank" class="btn btn-info"><i class="fas fa-info-circle"></i> Scopri di più</button>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- Layer 3 - Network -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <i class="fas fa-network-wired icon"></i> Livello Rete (Network Layer)
+                          </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#osiAccordion">
+                          <div class="accordion-body">
+                              Il Livello Rete si occupa del routing dei pacchetti e dell'indirizzamento IP, permettendo la comunicazione tra diverse reti.
+                              <ul>
+                                  <li><strong>Funzione:</strong>&nbsp; Routing dei pacchetti tra dispositivi.</li>
+                                  <li><strong>Protocolli:</strong>&nbsp; IP, ICMP, IPsec.</li>
+                              </ul>
+                              <button a href = "https://it.wikipedia.org/wiki/Modello_OSI" target = "_blank" class="btn btn-info"><i class="fas fa-info-circle"></i> Scopri di più</button>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- Layer 4 - Transport -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="fas fa-exchange-alt icon"></i> Livello Trasporto (Transport Layer)
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#osiAccordion">
+                        <div class="accordion-body">
+                            <h3 class="highlight">Descrizione Generale</h3>
+                            <p>
+                                Il Livello Trasporto è il quarto livello nel modello ISO/OSI e si occupa della gestione della trasmissione dei dati tra due sistemi finali, 
+                                garantendo che i dati vengano trasferiti correttamente e in modo sicuro. Si occupa anche della gestione del flusso dei dati, 
+                                della segmentazione e della ricostruzione dei dati, nonché della gestione degli errori.
+                            </p>
+                            
+                            <h3 class="highlight">Funzioni principali del Livello Trasporto</h3>
+                            <ul>
+                                <li><strong>Controllo del flusso:</strong>&nbsp; Regola la velocità di trasmissione per evitare congestioni.</li>
+                                <li><strong>Controllo degli errori:</strong>&nbsp; Rileva e corregge errori nei dati tramite ritrasmissioni.</li>
+                                <li><strong>Segmentazione dei dati:</strong>&nbsp; Divide i dati in segmenti più piccoli per una trasmissione efficiente.</li>
+                                <li><strong>Connessione:</strong>&nbsp; Gestisce connessioni orientate (TCP) o senza connessione (UDP).</li>
+                                <li><strong>Affidabilità:</strong>&nbsp; Garantisce la trasmissione senza perdita di dati.</li>
+                            </ul>
+                            
+                            <h3 class="highlight">Protocolli principali del Livello Trasporto</h3>
+                            <p>
+                                I principali protocolli utilizzati in questo livello sono:
+                            </p>
+                            <ul>
+                                <li><strong>TCP (Transmission Control Protocol):</strong>&nbsp; Protocollo affidabile e orientato alla connessione.</li>
+                                <li><strong>UDP (User Datagram Protocol):</strong>&nbsp; Protocollo non affidabile, veloce e senza connessione.</li>
+                                <li><strong>SPX (Sequenced Packet Exchange):</strong>&nbsp; Utilizzato in reti Novell.</li>
+                            </ul>
+                            
+                            <h3 class="highlight">Dettagli sul TCP</h3>
+                            <ul>
+                                <li><strong>Affidabilità:</strong>&nbsp; Utilizza conferme (ACK) e ritrasmissioni per garantire l'integrità dei dati.</li>
+                                <li><strong>Controllo del flusso:</strong>&nbsp; Evita il sovraccarico della rete regolando la velocità di invio.</li>
+                                <li><strong>Rilevazione degli errori:</strong>&nbsp; Ogni segmento TCP contiene un checksum per rilevare eventuali errori.</li>
+                                <li><strong>Riorganizzazione dei dati:</strong>&nbsp; Garantisce l'ordine corretto dei segmenti ricevuti.</li>
+                            </ul>
+                            
+                            <h3 class="highlight">Dettagli su UDP</h3>
+                            <ul>
+                                <li><strong>Velocità:</strong>&nbsp; Ideale per applicazioni in tempo reale come streaming o VoIP.</li>
+                                <li><strong>Semplicità:</strong>&nbsp; Non utilizza meccanismi di controllo del flusso o ritrasmissione.</li>
+                            </ul>
+        
+                            <h3 class="highlight">Caratteristiche avanzate</h3>
+                            <ul>
+                                <li><strong>Congestione di rete:</strong>&nbsp; TCP implementa algoritmi per gestire la congestione.</li>
+                                <li><strong>Multiplexing:</strong>&nbsp; Permette la gestione di più connessioni tramite porte.</li>
+                            </ul>
+        
+                            <h3 class="highlight">Esempi di Applicazioni del Livello Trasporto</h3>
+                            <ul>
+                                <li><strong>HTTP: </strong>&nbsp;  Utilizza TCP per garantire trasmissioni affidabili.</li>
+                                <li><strong>FTP: </strong>&nbsp;  Trasferimento sicuro di file tramite TCP.</li>
+                                <li><strong>DNS: </strong>&nbsp;  Utilizza UDP per query rapide e leggere.</li>
+                            </ul>
+        
+                            <button a href = "https://it.wikipedia.org/wiki/Modello_OSI" target = "_blank" class="btn btn-info"><i class="fas fa-info-circle"></i> Scopri di più</button>
+                        </div>
+                    </div>
+                </div>
+        
+                  <!-- Layer 5 - Session -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              <i class="fas fa-sitemap icon"></i> Livello Sessione (Session Layer)
+                          </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#osiAccordion">
+                          <div class="accordion-body">
+                              Il Livello Sessione gestisce le connessioni tra le applicazioni, come il controllo del flusso e la sincronizzazione dei dati.
+                              <ul>
+                                  <li><strong>Funzione:</strong>&nbsp; Gestione delle sessioni di comunicazione.</li>
+                                  <li><strong>Protocolli:</strong>&nbsp; NetBIOS, RPC.</li>
+                              </ul>
+                              <button a href = "https://it.wikipedia.org/wiki/Modello_OSI" target = "_blank" class="btn btn-info"><i class="fas fa-info-circle"></i> Scopri di più</button>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- Layer 6 - Presentation -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSix">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              <i class="fas fa-eye icon"></i> Livello Presentazione (Presentation Layer)
+                          </button>
+                      </h2>
+                      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#osiAccordion">
+                          <div class="accordion-body">
+                              Il Livello Presentazione si occupa della codifica e della compressione dei dati, preparando i dati per la visualizzazione.
+                              <ul>
+                                  <li><strong>Funzione:</strong>&nbsp; Codifica dei dati per la visualizzazione.</li>
+                                  <li><strong>Protocolli:</strong>&nbsp; SSL/TLS, JPEG, GIF.</li>
+                              </ul>
+                              <button a href = "https://it.wikipedia.org/wiki/Modello_OSI" target = "_blank" class="btn btn-info"><i class="fas fa-info-circle"></i> Scopri di più</button>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- Layer 7 - Application -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSeven">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                              <i class="fas fa-laptop icon"></i> Livello Applicazione (Application Layer)
+                          </button>
+                      </h2>
+                      <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#osiAccordion">
+                          <div class="accordion-body">
+                              Il Livello Applicazione fornisce servizi di rete a software applicativo come browser web e client di posta elettronica.
+                              <ul>
+                                  <li><strong>Funzione:</strong>&nbsp; Interazione diretta con l'utente.</li>
+                                  <li><strong>Protocolli:</strong>&nbsp; HTTP, SMTP, FTP.</li>
+                              </ul>
+                              <button a href = "https://it.wikipedia.org/wiki/Modello_OSI" target = "_blank" class="btn btn-info"><i class="fas fa-info-circle"></i> Scopri di più</button>
+                          </div>
+                      </div>
+                  </div>
+  
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background mt-5">
+    <div class="container">
+      <h3 class="sitename">Modello ISO-OSI</h3>
+      <p>Mattia Gasparetto 5°E</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

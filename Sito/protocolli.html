@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Socket</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Le Socket</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">Introduzione</a></li>
+          <li><a href="">Collegamenti</a></li>
+          <li><a href="">Glossario</a></li>
+          <li><a href="">Blog</a></li>  
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Protocolli TCP e UDP</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Protocolli TCP e UDP</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <div class="container my-5">
+      <section class="intro-section1 text-center py-4">
+        <div class="container">
+            <p class="lead text-muted">
+                I protocolli TCP (Transmission Control Protocol) e UDP (User Datagram Protocol) sono fondamentali 
+                per il funzionamento di Internet. Ognuno di essi ha caratteristiche uniche che li rendono adatti 
+                a situazioni diverse. Scopriamo insieme come funzionano e le loro principali differenze.
+            </p>
+        </div>
+    </section>
+
+    <div class="intro-image">
+      <img src="assets/img/img2.png" alt="Illustrazione protocolli TCP e UDP" class="responsive-image">
+    </div>
+    
+    <section id="menu-a-discesa">
+      <div class="container">
+        <!-- Menu a discesa -->
+        <div class="dropdown-menu">
+          <button>TCP (Transmission Control Protocol)</button>
+          <button>UDP (User Datagram Protocol)</button>
+          <button>Confronto TCP vs UDP</button>
+        </div>
+      </div>
+    </section>
+    
+      <!-- Sistema a schede avanzato -->
+      <div style = "margin-bottom: 10%" class="accordion" id="protocolAccordion">
+        <!-- Scheda TCP -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTCP">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTCP" aria-expanded="false" aria-controls="collapseTCP">
+              <i class="bi bi-wifi text-success me-2"></i> TCP (Transmission Control Protocol)
+            </button>
+          </h2>
+          <div id="collapseTCP" class="accordion-collapse collapse" aria-labelledby="headingTCP" data-bs-parent="#protocolAccordion">
+            <div class="accordion-body">
+              <h4 class="text-info">Caratteristiche principali</h4>
+              <ul>
+                <li><strong>Orientato alla connessione:</strong>&nbsp; utilizza il processo di three-way handshake per stabilire una connessione sicura.</li>
+                <li><strong>Affidabilità:</strong>&nbsp; garantisce la consegna dei dati tramite conferme (ACK) e ritrasmissioni in caso di perdita.</li>
+                <li><strong>Controllo del flusso:</strong>&nbsp; regola la trasmissione dei dati per evitare il sovraccarico del destinatario.</li>
+                <li><strong>Controllo degli errori:</strong>&nbsp; verifica e corregge eventuali errori nei dati trasmessi.</li>
+                <li><strong>Applicazioni principali:</strong>&nbsp; Web browsing (HTTP/HTTPS), email (SMTP, POP3, IMAP), file transfer (FTP), accesso remoto (SSH).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Scheda UDP -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingUDP">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUDP" aria-expanded="false" aria-controls="collapseUDP">
+              <i class="bi bi-lightning-fill text-warning me-2"></i> UDP (User Datagram Protocol)
+            </button>
+          </h2>
+          <div id="collapseUDP" class="accordion-collapse collapse" aria-labelledby="headingUDP" data-bs-parent="#protocolAccordion">
+            <div class="accordion-body">
+              <h4 class="text-info">Caratteristiche principali</h4>
+              <ul>
+                <li><strong>Senza connessione:</strong>&nbsp; trasmette dati sotto forma di datagrammi, senza handshake iniziale.</li>
+                <li><strong>Velocità:</strong>&nbsp; molto rapido perché elimina controlli come conferme e ritrasmissioni.</li>
+                <li><strong>Mancanza di affidabilità:</strong>&nbsp; non garantisce la consegna dei pacchetti né la correzione degli errori.</li>
+                <li><strong>Adatto per broadcast e multicast:</strong>&nbsp; consente la trasmissione a più destinatari contemporaneamente.</li>
+                <li><strong>Applicazioni principali:</strong>&nbsp; Streaming video/audio (YouTube, Netflix), gaming online, VoIP (Skype), DNS, sincronizzazione oraria (NTP).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Scheda Confronto -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingComparison">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComparison" aria-expanded="false" aria-controls="collapseComparison">
+              <i class="bi bi-columns-gap text-primary me-2"></i> Confronto TCP vs UDP
+            </button>
+          </h2>
+          <div id="collapseComparison" class="accordion-collapse collapse" aria-labelledby="headingComparison" data-bs-parent="#protocolAccordion">
+            <div class="accordion-body">
+              <h4 class="text-info">Differenze principali</h4>
+              <table class="table table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Caratteristica</th>
+                    <th>TCP</th>
+                    <th>UDP</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Connessione</td>
+                    <td>Orientato alla connessione</td>
+                    <td>Senza connessione</td>
+                  </tr>
+                  <tr>
+                    <td>Affidabilità</td>
+                    <td>Garantita con ritrasmissioni</td>
+                    <td>Non garantita</td>
+                  </tr>
+                  <tr>
+                    <td>Velocità</td>
+                    <td>Più lento</td>
+                    <td>Molto rapido</td>
+                  </tr>
+                  <tr>
+                    <td>Controllo del flusso</td>
+                    <td>Presente</td>
+                    <td>Assente</td>
+                  </tr>
+                  <tr>
+                    <td>Applicazioni principali</td>
+                    <td>Web browsing, email, FTP</td>
+                    <td>Streaming, gaming, VoIP</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <footer id="footer" class="footer dark-background mt-5">
+    <div class="container">
+      <h3 class="sitename">TCP e UDP</h3>
+      <p>Mattia Gasparetto 5°E</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
